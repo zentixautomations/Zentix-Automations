@@ -275,20 +275,21 @@
     <section class="lead-magnet" aria-label="Download Lead Magnet">
       <h2>Download our FREE Ultimate AI Automation Checklist</h2>
       <p>Discover the top 10 practical tasks you can automate right now to save time and boost efficiency.</p>
-      <form id="leadMagnetForm" action="#" method="POST" onsubmit="submitLeadMagnet(event)">
+     <form id="leadMagnetForm" action="https://formspree.io/f/mblywplr" method="POST">
         <div class="form-group">
           <input type="text" id="name" name="name" placeholder="Your Name" required autocomplete="name" />
         </div>
         <div class="form-group">
           <input type="email" id="email" name="email" placeholder="Your Email" required autocomplete="email" />
         </div>
+       <input type="hidden" name="_captcha" value="false" />
         <button type="submit" class="btn-primary">Download Now</button>
       </form>
     </section>
 
     <section id="consultation" class="consultation" aria-label="Book Free Consultation">
       <h2>Book Your Free 15-Minute Consultation</h2>
-      <form id="consultationForm" action="#" method="POST" onsubmit="submitConsultation(event)">
+      <form id="consultationForm" action="https://formspree.io/f/mblywplr" method="POST">
         <div class="form-group">
           <input type="text" id="cname" name="name" placeholder="Your Name" required autocomplete="name" />
         </div>
@@ -298,6 +299,7 @@
         <div class="form-group">
           <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
         </div>
+        <input type="hidden" name="_captcha" value="false" />
         <button type="submit" class="btn-primary">Book Consultation</button>
       </form>
     </section>
@@ -313,11 +315,7 @@
       alert('Thanks for downloading! We will email you the checklist shortly.');
       event.target.reset();
     }
-    function submitConsultation(event) {
-      event.preventDefault();
-      alert('Thanks for booking a consultation! We will get back to you soon.');
-      event.target.reset();
-    }
+  
   </script>
 </body>
 </html>
