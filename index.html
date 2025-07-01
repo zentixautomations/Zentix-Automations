@@ -205,6 +205,11 @@
   font-family: inherit;
   outline: none;
 }
+    .consultation input:focus,
+.consultation input:not(:placeholder-shown) {
+  color: black;  /* text color changes to black while typing or if field filled */
+}
+
 
 /* Placeholder text color */
 .consultation input::placeholder {
