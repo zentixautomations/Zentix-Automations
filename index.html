@@ -174,41 +174,61 @@
       background-color: rgba(255 255 255 / 0.15);
       color: white;
     }
-    /* Consultation Form */
-    .consultation {
-      margin-bottom: 80px;
-      max-width: 520px;
-      margin-left: auto;
-      margin-right: auto;
-      text-align: center;
-      user-select: text;
-    }
-    .consultation h2 {
-      margin-bottom: 30px;
-      color: #5a2ae8;
-      font-weight: 700;
-      font-size: 2rem;
-    }
-    .consultation textarea {
-      color: white; /* 👈 ADD THIS */
-      width: 100%;
-      padding: 14px 20px;
-      border-radius: 20px;
-      border: 1px solid #ccc;
-      font-size: 1.1rem;
-      resize: vertical;
-      min-height: 110px;
-      margin-bottom: 25px;
-      box-sizing: border-box;
-      outline-offset: 2px;
-      outline-color: #5a2ae8;
-      transition: outline-color 0.3s ease;
-      font-family: inherit;
-    }
-    .consultation textarea:focus {
-      outline-color: #5a2ae8;
-      border-color: #5a2ae8;
-    }
+  /* Consultation Form */
+.consultation {
+  margin-bottom: 80px;
+  max-width: 520px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  user-select: text;
+}
+
+.consultation h2 {
+  margin-bottom: 30px;
+  color: #5a2ae8;
+  font-weight: 700;
+  font-size: 2rem;
+}
+
+/* Modified input fields */
+.consultation input {
+  background-color: #5a2ae8;
+  color: white;
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 20px;
+  border: none;
+  font-size: 1.1rem;
+  margin-bottom: 18px;
+  box-sizing: border-box;
+  outline-offset: 2px;
+  outline-color: #5a2ae8;
+  transition: outline-color 0.3s ease;
+}
+
+/* Existing textarea (unchanged) */
+.consultation textarea {
+  width: 100%;
+  padding: 14px 20px;
+  border-radius: 20px;
+  border: 1px solid #ccc;
+  font-size: 1.1rem;
+  resize: vertical;
+  min-height: 110px;
+  margin-bottom: 25px;
+  box-sizing: border-box;
+  outline-offset: 2px;
+  outline-color: #5a2ae8;
+  transition: outline-color 0.3s ease;
+  font-family: inherit;
+}
+
+.consultation textarea:focus {
+  outline-color: #5a2ae8;
+  border-color: #5a2ae8;
+}
+
     /* Footer */
     footer {
       text-align: center;
