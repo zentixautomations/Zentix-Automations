@@ -191,7 +191,7 @@
   font-size: 2rem;
 }
 
-/* ✅ MODIFIED INPUT FIELDS */
+/* Updated input fields */
 .consultation input {
   width: 100%;
   padding: 14px 20px;
@@ -200,15 +200,18 @@
   font-size: 1.1rem;
   margin-bottom: 18px;
   box-sizing: border-box;
-  outline-offset: 2px;
-  outline-color: #5a2ae8;
-  transition: outline-color 0.3s ease;
-  background-color: #5a2ae8; /* <-- background set to purple */
-  color: white;               /* <-- text color set to white */
+  background-color: #5a2ae8;  /* Purple background */
+  color: white;               /* White text */
   font-family: inherit;
+  outline: none;
 }
 
-/* TEXTAREA (unchanged, but included for completeness) */
+/* Placeholder text color */
+.consultation input::placeholder {
+  color: #f0f0f0; /* Soft white/gray */
+}
+
+/* Textarea unchanged */
 .consultation textarea {
   width: 100%;
   padding: 14px 20px;
@@ -229,6 +232,7 @@
   outline-color: #5a2ae8;
   border-color: #5a2ae8;
 }
+
     /* Footer */
     footer {
       text-align: center;
