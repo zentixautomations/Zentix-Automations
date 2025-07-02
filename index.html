@@ -281,7 +281,7 @@
     <header class="hero" role="main">
       <h2>Save Time & Boost Productivity with Smart Automation</h2>
       <p>We automate repetitive tasks so you can focus on growing your business.</p>
-      <button class="btn-primary" onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">Book Your Free Consultation</button>
+      <button class="btn-primary" onclick="document.getElementById('consultation').scrollIntoView({behavior:'smooth'})">FREE AUTOMATION CHECKLIST</button>
       <p style="margin-top: 15px; font-weight: 600;">Or download our <strong>FREE AUTOMATION CHECKLIST</strong> below</p>
     </header>
 
@@ -306,7 +306,7 @@
       </p>
     </section>
 
-    <section class="lead-magnet" aria-label="Download Lead Magnet">
+     <section id="leadmagnet" class="lead-magnet" aria-label="Download Lead Magnet">
       <h2>Download our FREE Ultimate AI Automation Checklist</h2>
       <p>Discover the top 10 practical tasks you can automate right now to save time and boost efficiency.</p>
      <form id="leadMagnetForm" action="https://formspree.io/f/mblywplr" method="POST">
@@ -320,23 +320,7 @@
         <button type="submit" class="btn-primary">Download Now</button>
       </form>
     </section>
-
-    <section id="consultation" class="consultation" aria-label="Book Free Consultation">
-      <h2>Book Your Free 15-Minute Consultation</h2>
-      <form id="consultationForm" action="https://formspree.io/f/mblywplr" method="POST">
-        <div class="form-group">
-          <input type="text" id="cname" name="name" placeholder="Your Name" required autocomplete="name" />
-        </div>
-        <div class="form-group">
-          <input type="email" id="cemail" name="email" placeholder="Your Email" required autocomplete="email" />
-        </div>
-        <div class="form-group">
-          <textarea id="message" name="message" placeholder="How can we help you?" required></textarea>
-        </div>
-        <input type="hidden" name="_captcha" value="false" />
-        <button type="submit" class="btn-primary">Book Consultation</button>
-      </form>
-    </section>
+    
   </div>
 
   <footer>
